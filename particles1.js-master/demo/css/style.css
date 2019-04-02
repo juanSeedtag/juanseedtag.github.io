@@ -1,0 +1,463 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,body,div,span,object,iframe,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-family: Lato-Light;
+font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+
+:root {
+	--animation-delay: 0;
+	--duration: 800ms;
+	--iterations: 1;
+}
+/* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
+
+#menu{
+
+	position: absolute;
+height: 100%;
+top: -40%;
+right: -48%;
+width: 100%;
+transform: scale(.08);
+background-repeat: no-repeat;
+	background-image: url(menu.png);
+	z-index: 999;
+}
+
+
+#text2{
+	position: absolute;
+	display: none;
+	left:20%;
+	top:38%;
+	  font-family: Lato;
+		color: white;
+		font-size: 3.2em;
+		background: #3d4495;
+}
+
+
+a { color: white; text-decoration: none; }
+
+.arrow {
+  text-align: center;
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+}
+.bounce {
+  -moz-animation: bouncer 2s infinite;
+  -webkit-animation: bouncer 2s infinite;
+  animation: bouncer 2s infinite;
+}
+
+@keyframes bouncer {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.reveal-text,
+.reveal-text::after {
+	-webkit-animation-delay: 1s;
+	        animation-delay: 1s;
+	-webkit-animation-delay: var(--animation-delay, 2s);
+	        animation-delay: var(--animation-delay, 2s);
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1;
+	-webkit-animation-iteration-count: var(--iterations, 1);
+	        animation-iteration-count: var(--iterations, 1);
+	-webkit-animation-duration: 800ms;
+	        animation-duration: 800ms;
+	-webkit-animation-duration: var(--duration, 800ms);
+	        animation-duration: var(--duration, 800ms);
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
+	-webkit-animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+
+          animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+
+
+
+
+}
+
+
+.reveal-text {
+	position: absolute;
+  left: 50%;
+  top:53%;
+  transform: translate(-44% , -50%);
+	font-size: 3.2vw;
+	-webkit-animation-name: clip-text;
+	        animation-name: clip-text;
+	color: #FFF;
+	white-space: nowrap;
+  font-family: Lato-Light;
+background-color: #transparent;
+padding-bottom: 7px;
+background-color: #3d4495
+
+
+}
+
+
+
+
+
+
+.reveal-text::after {
+		content: "";
+		position: absolute;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #D3D3D3;
+		-webkit-transform: scaleX(0);
+		        transform: scaleX(0);
+		-webkit-transform-origin: 0 50%;
+		        transform-origin: 0 50%;
+		pointer-events: none;
+		-webkit-animation-name: text-revealer;
+		        animation-name: text-revealer;
+
+	}
+
+
+@-webkit-keyframes clip-text {
+	from {
+		-webkit-clip-path: inset(0 100% 0 0);
+		        clip-path: inset(0 100% 0 0);
+	}
+	to {
+		-webkit-clip-path: inset(0 0 0 0);
+		        clip-path: inset(0 0 0 0);
+	}
+}
+
+
+@keyframes clip-text {
+	from {
+		-webkit-clip-path: inset(0 100% 0 0);
+		        clip-path: inset(0 100% 0 0);
+	}
+	to {
+		-webkit-clip-path: inset(0 0 0 0);
+		        clip-path: inset(0 0 0 0);
+	}
+}
+
+
+@-webkit-keyframes text-revealer {
+
+	0%, 50% {
+		-webkit-transform-origin: 0 50%;
+		        transform-origin: 0 50%;
+	}
+
+	60%, 100% {
+		-webkit-transform-origin: 100% 50%;
+		        transform-origin: 100% 50%;
+	}
+
+
+	60% {
+		-webkit-transform: scaleX(1);
+		        transform: scaleX(1);
+	}
+
+	100% {
+		-webkit-transform: scaleX(0);
+		        transform: scaleX(0);
+	}
+}
+
+
+@keyframes text-revealer {
+
+	0%, 50% {
+		-webkit-transform-origin: 0 50%;
+		        transform-origin: 0 50%;
+	}
+
+	60%, 100% {
+		-webkit-transform-origin: 100% 50%;
+		        transform-origin: 100% 50%;
+	}
+
+
+	60% {
+		-webkit-transform: scaleX(1);
+		        transform: scaleX(1);
+	}
+
+	100% {
+		-webkit-transform: scaleX(0);
+		        transform: scaleX(0);
+	}
+}
+
+#text{
+width: 70%;
+position: absolute;
+
+font-family: Lato-Light;
+top:55%;
+left:53%;
+transform: translate(-50%, -50%);
+color:white;
+font-size: 4em;
+background-color: #3d4495;
+}
+@keyframes blur {
+  from{  filter: blur(12px);}
+to {  filter: blur(0px);}
+}
+
+
+@keyframes move {
+  from{  left: blur(5px);}
+to {  filter: blur(0px);}
+}
+
+
+
+#seedtagClaim{
+background-color: #3d4495;
+	position: absolute;
+  top: 50%;
+  left: 25%;
+animation: filler 0.9s ease forwards 3.5s, blur 3s forwards ;
+}
+
+#seedtagClaim path{
+  stroke-dasharray:226px;
+  stroke-dashoffset:226px;
+  animation:line-animation 7s ease forwards 0.3s ;
+
+}
+
+
+body{
+
+width: : 100%;
+height: 100%;
+
+
+}
+#seedtagLogo{
+  position: absolute;
+  top: -1%;
+  left: -11%;
+	transform: scale(.25)!important;
+
+animation: filler 0.9s ease forwards .5s, blur 1s forwards ;
+}
+
+#seedtagLogo path:nth-child(1){
+  stroke-dasharray:326px;
+  stroke-dashoffset:326px;
+  animation:line-animation 0.5s ease forwards 0.3s ;
+
+
+}
+
+#seedtagLogo path:nth-child(2){
+
+  stroke-dasharray:326px;
+  stroke-dashoffset:326px;
+  animation:line-animation 1.5s ease forwards 0.3s ;
+
+}
+#seedtagLogo path:nth-child(3){
+  animation:line-animation 2s ease forwards .3s ;
+
+  stroke-dasharray:286.21;
+  stroke-dashoffset:286.21;
+}
+#seedtagLogo path:nth-child(4){
+  animation:line-animation 1.5s ease forwards .3s ;
+
+  stroke-dasharray:389;
+  stroke-dashoffset:389;
+}
+#seedtagLogo path:nth-child(5){
+  animation:line-animation 1.5s ease forwards .3s ;
+
+  stroke-dasharray:73.31;
+  stroke-dashoffset:73.31;
+}
+
+#seedtagLogo path:nth-child(6){
+  stroke-dasharray:405.21;
+  stroke-dashoffset:405.21;
+  animation:line-animation 1.5s ease forwards .3s ;
+
+}
+
+#seedtagLogo path:nth-child(7){
+  animation:line-animation 1.5s ease forwards .3s ;
+
+  stroke-dasharray:117.9px;
+  stroke-dashoffset:117.9px;
+}
+#seedtagLogo path:nth-child(8){
+  stroke-dasharray:329.26;
+  stroke-dashoffset:329.26;
+  animation:line-animation 1.5s ease forwards .3s ;
+
+}
+#seedtagLogo path:nth-child(9){
+  stroke-dasharray:117.21;
+  stroke-dashoffset:117.21;
+  animation:line-animation 1.5s ease forwards .3s ;
+
+}
+#seedtagLogo path:nth-child(10){
+  stroke-dasharray:389.09;
+  stroke-dashoffset:389.09;
+  animation:line-animation 1.5s ease forwards .3s ;
+
+}#seedtagLogo path:nth-child(11){
+  animation:line-animation 1.5s ease forwards .3s ;
+
+  stroke-dasharray:316.81;
+  stroke-dashoffset:316.81;
+}
+
+#seedtagLogo path:nth-child(12){
+  animation:line-animation 1.5s ease forwards .3s ;
+
+  stroke-dasharray:458.5;
+  stroke-dashoffset:458.5;
+}
+#seedtagLogo path:nth-child(13){
+  stroke-dasharray:458.89;
+  stroke-dashoffset:458.89;
+  animation:line-animation 1.5s ease forwards .3s;
+
+}
+#seedtagLogo path:nth-child(14){
+  animation:line-animation 1.5s ease forwards .3s ;
+
+  stroke-dasharray:458.88;
+  stroke-dashoffset:458.88;
+}
+#seedtagLogo path:nth-child(15){
+  stroke-dasharray:87.5;
+  stroke-dashoffset:87.5;
+  animation:line-animation 1.5s ease forwards .3s ;
+
+}
+#seedtagLogo path:nth-child(16){
+  stroke-dasharray:327.80px;
+  stroke-dashoffset:327.80px;
+  animation:line-animation 1.5s ease forwards .3s ;
+
+}
+
+
+@keyframes filler {
+  to { fill:white; }
+
+
+}
+
+@keyframes line-animation {
+  to { stroke-dashoffset:0; }
+}
+
+
+
+
+html,body{
+	width:100%;
+	height:100%;
+	background:#111;
+}
+
+
+}
+
+
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #3d4495;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
