@@ -610,7 +610,7 @@ to {  filter: blur(0px);}
 {
   position:absolute;
   background-color: transparent;
-  top:80%;
+  top:65%;
   left:80%;
   z-index:999;
   padding: 32px 32px;
@@ -775,8 +775,8 @@ to {  filter: blur(0px);}
 {
   position:absolute;
   background-color: transparent;
-  top:30%;
-  left:80%;
+  top:60%;
+  left:20%;
   z-index:999;
   padding: 32px 32px;
   color: white;
@@ -810,9 +810,89 @@ svg{ width:180px;
 
 }
 
+.btn29
+{
+  position:absolute;
+  background-color: transparent;
+  top:50%;
+  left:20%;
+  z-index:999;
+  padding: 32px 32px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0;
+  transition: 2s;
+  border:none;
+}
+
+.btn29:hover {opacity: 1}
+
+svg{ width:180px;
+
+}
 
 
 
+.btn30
+{
+  position:absolute;
+  background-color: transparent;
+  top:60%;
+  left:20%;
+  z-index:999;
+  padding: 32px 32px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0;
+  transition: 2s;
+  border:none;
+}
+
+.btn30:hover {opacity: 1}
+
+.btn31
+{
+  position:absolute;
+  background-color: transparent;
+  top:25%;
+  left:35%;
+  z-index:999;
+  padding: 32px 32px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0;
+  transition: 2s;
+  border:none;
+}
+
+
+
+
+.btn31:hover {opacity: 1}
+
+.btn32
+{
+  position:absolute;
+  background-color: transparent;
+  top:40%;
+  left:55%;
+  z-index:999;
+  padding: 32px 32px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  opacity: 0;
+  transition: 2s;
+  border:none;
+}
+
+
+
+
+.btn32:hover {opacity: 1}
 #seedtagLogo{
   position: absolute;
   top: 50%;

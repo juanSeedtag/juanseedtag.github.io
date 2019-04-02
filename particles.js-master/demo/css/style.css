@@ -110,7 +110,7 @@ a { color: white; text-decoration: none; }
   left: 50%;
   top:53%;
   transform: translate(-44% , -50%);
-	font-size: 3.2em;
+	font-size: 3.2vw;
 	-webkit-animation-name: clip-text;
 	        animation-name: clip-text;
 	color: #FFF;
@@ -122,6 +122,11 @@ background-color: #3d4495
 
 
 }
+
+
+
+
+
 
 .reveal-text::after {
 		content: "";
