@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gif masking in SVG</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="css/style2.css">
+
+
+</head>
+
+<body>
+
+  <svg class="svg" viewBox="0 0 900 900">
+  <defs>
+    <mask
+      id="mask"
+      maskunits="userSpaceOnUse"
+      maskcontentunits="userSpaceOnUse">
+      <image
+        xlink:href="/4.gif"
+        width="100%"
+        height="100%" />
+    </mask>
+
+
+    
+
+
+
+    <pattern
+      id="checker"
+      width="10"
+      height="10"
+      patternUnits="userSpaceOnUse"
+      viewBox="0 0 30 30">
+        <rect x="0" y="0" width="50" height="50" fill="blue"/>
+        <rect x="0" y="0" width="25" height="25" fill="url(#g)"/>
+        <circle cx="25" cy="25" r="20" fill="url(#g)"/>
+    </pattern>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#checker)" mask="url(#mask)" />
+</svg>
+
+
+
+</body>
+
+</html>
