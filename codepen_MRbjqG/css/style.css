@@ -1,0 +1,33 @@
+div{
+  position:absolute;
+  left:40%;
+  top:30%;
+
+
+}
+
+img {
+  width: 300px;
+}
+
+.clip-animation {
+  transform:scale(2.5);
+  clip-path: polygon()}
+
+.clip-animation {
+  animation: clip 3s forwards;
+}
+
+@keyframes clip {
+  0% {
+    clip-path: polygon(50% 0, 100% 0, 100% 0, 50% 0, 0 0, 0 0);
+  }
+  50% {
+    clip-path: polygon(50% 0, 100% 0, 100% 0, 50% 83%, 0 0, 0 0);
+  }
+   100% {
+
+
+     clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+  }
+}
