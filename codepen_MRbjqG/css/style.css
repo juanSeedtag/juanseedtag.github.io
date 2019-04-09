@@ -1,33 +1,122 @@
-div{
-  position:absolute;
-  left:40%;
-  top:30%;
+body{  overflow: hidden;
+}
+#color{
+  position: absolute;
+height: 100%;
+width: 100%;
+  background-color: black;
+  top:0;
+  left: 0;
+  animation: forwards clip 1s ;
+  z-index: -999;
+
+}
+#image1{
+position: absolute;
+animation: 2s forwards alternate circle;
+top: 47%;
+left:50%;
+transform: translate(-50% , -50%);
+margin-right: -50%;
+
 
 
 }
+
+
+
+#text1{
+  position: absolute;
+font-size: 4.3em;
+color: white;
+font-family: sans-serif;
+font-weight: bold;
+top: 73%;
+left:50%;
+transform: translate(-50% , -50%);
+animation: clip .8s forwards;
+animation-delay: 0.6s;
+opacity:0;
+margin-right: -50%;
+
+
+}
+ p{
+
+   position: absolute;
+   font-size: 1.4em;
+   color: white;
+   font-family: sans-serif;
+   font-weight: lighter;
+   top: 76%;
+   left:50%;
+   transform: translate(-50% , -50%);
+   animation: clip .8s forwards;
+   animation-delay: 0.7s;
+   opacity:0;
+   margin-right: -50%;
+
+
+
+ }
 
 img {
-  width: 300px;
+  width: 200px;
+      height: auto;
+
+
 }
+
+
 
 .clip-animation {
   transform:scale(2.5);
   clip-path: polygon()}
 
 .clip-animation {
-  animation: clip 3s forwards;
+  animation: clip 1s forwards;
+
 }
 
 @keyframes clip {
   0% {
+opacity:1;
     clip-path: polygon(50% 0, 100% 0, 100% 0, 50% 0, 0 0, 0 0);
   }
   50% {
+    opacity:1;
+
     clip-path: polygon(50% 0, 100% 0, 100% 0, 50% 83%, 0 0, 0 0);
   }
    100% {
 
 
      clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+     opacity:1;
+
+  }
+}
+
+@keyframes circle {
+  from {
+    -webkit-clip-path: circle(0%);
+    clip-path: circle(0%);
+  }
+  to {
+    -webkit-clip-path: circle(190%);
+    clip-path: circle(190%);
+  }
+}
+
+
+
+@keyframes circle1 {
+  from {
+    -webkit-clip-path: circle(150%);
+    clip-path: circle(150%);
+  }
+  to {
+    -webkit-clip-path: circle(0%);
+    clip-path: circle(0%);
   }
 }
