@@ -7,7 +7,7 @@ width: 100%;
   background-color: black;
   top:0;
   left: 0;
-  animation: forwards clip 1s ;
+  animation: forwards clip 1.3s ;
   z-index: -999;
 
 }
@@ -31,7 +31,7 @@ font-size: 4.3em;
 color: white;
 font-family: sans-serif;
 font-weight: bold;
-top: 73%;
+top: 72%;
 left:50%;
 transform: translate(-50% , -50%);
 animation: clip .8s forwards;
@@ -42,13 +42,13 @@ margin-right: -50%;
 
 }
  p{
-
+text-align: center;
    position: absolute;
-   font-size: 1.4em;
+   font-size: 1.3em;
    color: white;
    font-family: sans-serif;
    font-weight: lighter;
-   top: 76%;
+   top: 78%;
    left:50%;
    transform: translate(-50% , -50%);
    animation: clip .8s forwards;
